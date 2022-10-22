@@ -24,7 +24,7 @@
     />
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
-  <body class="min-h-[100vh] flex flex-col items-center justify-around gap-20">
+  <body class="min-h-[100vh] flex flex-col items-center justify-around ">
     <header class="flex justify-around p-16 w-full">
       <p><img src="/images/logo.svg" alt="" /> Huddle</p>
       <button
@@ -70,8 +70,8 @@
       </div>
     </main>
 
-    <section class="flex justify-center md:gap-12">
-      <div class="flex flex-col gap-5 justify-center basis-1/4">
+    <section class="active flex flex-col-reverse md:flex-row justify-center md:gap-12">
+      <div class="flex flex-col gap-5 justify-center basis-1/4 md:text-center">
         <h2 class="text-[2rem] font-extrabold">Grow Together</h2>
         <p class="text-lg font-semibold">
           Generate meaningful discussions with your audience and build a strong,
@@ -87,11 +87,11 @@
       </div>
     </section>
 
-    <section class="flex justify-center md:gap-12">
+    <section class="flex flex-col md:flex-row justify-center md:gap-12">
       <div class="basis-1/4">
         <img
           class="basis-1/4"
-          src="/images/illustration-grow-together.svg"
+          src="/images/illustration-flowing-conversation.svg"
           alt="grow together image"
         />
       </div>
@@ -104,7 +104,7 @@
       </div>
     </section>
 
-    <section class="flex justify-center md:gap-12">
+    <section class="active flex flex-col-reverse md:flex-row justify-center md:gap-12">
       <div class="flex flex-col gap-5 justify-center basis-1/4">
         <h2 class="text-[2rem] font-extrabold">Your Users</h2>
         <p class="text-lg font-semibold">
@@ -115,13 +115,13 @@
       </div>
       <div class="basis-1/4">
         <img
-          src="/images/illustration-grow-together.svg"
+          src="/images/illustration-your-users.svg"
           alt="grow together image"
         />
       </div>
     </section>
 
-    <div
+    <section
       class="h-[50vh] flex flex-col items-center justify-center gap-4 md:gap-12"
     >
       <h2 class="text-[2rem] font-extrabold">Ready To Build Your Community?</h2>
@@ -130,14 +130,12 @@
       >
         <span class="text-base">Get Started For Free</span>
       </button>
-    </div>
+    </section>
 
-    <footer
-      class="bg-vdc text-white flex justify-around items-center flex-1 w-full p-6"
-    >
-      <div class="basis-1/2 flex gap-2 flex-col">
-        <h4><img src="/images/logo.svg" alt="" /> Huddle</h4>
-        <p class="max-w-[60ch]">
+    <footer class="bg-vdc text-white flex flex-col-reverse gap-8 md:gap-0 md:flex-row md:items-center md:justify-center w-full  text-left pb-12">
+      <div class="basis-1/2 flex flex-col gap-1 md:gap-4  pl-20 md:pl-0">
+        <img src="/images/logo-white.svg" alt="company logo" class="w-48 h-8"/> 
+        <p class="w-[40ch]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
           quam, hendrerit lacinia vestibulum a, ultrices quis sem.
         </p>
@@ -154,7 +152,7 @@
           example@huddle.com
         </p>
       </div>
-      <div class="basis-1/3 flex flex-col gap-10">
+      <div class="basis-1/2 md:basis-1/3 flex flex-col gap-1 md:gap-4 pl-20 md:pl-0">
         <div>
           <h3 class="font-bold text-[2rem]">Newsletter</h3>
           <p class="max-w-[40ch]">
@@ -163,10 +161,12 @@
           </p>
         </div>
         <form action="" class="flex h-10 item-end gap-2">
-          <input class="px-10 p-2 rounded-xl" type="email" placeholder="Your email">
-          <button
-            class="p-2 px-8 bg-lpnk  rounded-xl text-white "
-          >
+          <input
+            class="px-10 p-2 rounded-xl text-black"
+            type="email"
+            placeholder="Your email"
+          />
+          <button class="p-2 px-8 bg-lpnk rounded-xl text-white">
             <span> Subscribe</span>
           </button>
         </form>
