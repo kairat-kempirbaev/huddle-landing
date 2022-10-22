@@ -436,6 +436,7 @@ section h2,
   --sc1b: url("./images/bg-section-bottom-desktop-1.svg");
   --sc2t: url("./images/bg-section-top-desktop-2.svg");
   --sc2b: url("./images/bg-section-bottom-desktop-2.svg");
+  --footb: url("./images/bg-footer-top-desktop.svg");
 }
 
 *, ::before, ::after {
@@ -553,10 +554,6 @@ section h2,
   margin-bottom: 2.5rem;
 }
 
-.ml-20 {
-  margin-left: 5rem;
-}
-
 .block {
   display: block;
 }
@@ -585,24 +582,12 @@ section h2,
   width: 100%;
 }
 
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .w-48 {
   width: 12rem;
 }
 
 .max-w-\[50ch\] {
   max-width: 50ch;
-}
-
-.max-w-\[60ch\] {
-  max-width: 60ch;
-}
-
-.max-w-\[200px\] {
-  max-width: 200px;
 }
 
 .grow {
@@ -631,10 +616,6 @@ section h2,
 
 .items-baseline {
   align-items: baseline;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-center {
@@ -800,6 +781,16 @@ section h2,
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@media all and (max-width: 640px) {
+  :root {
+    --curve-height: 40px;
+    --sc1t: url("./images/bg-section-top-mobile-1.svg");
+    --sc1b: url("./images/bg-section-bottom-mobile-1.svg");
+    --sc2t: url("./images/bg-section-top-mobile-2.svg");
+    --sc2b: url("./images/bg-section-bottom-mobile-2.svg");
+  }
+}
+
 .try-it {
   position: relative;
   box-shadow: 0px 0px 18px -3px #ff47c7;
@@ -852,14 +843,10 @@ footer {
 
 footer:before {
   top: calc(-1 * var(--curve-height));
-  background-image: url("./images/bg-footer-top-desktop.svg");
+  background-image: var(--footb);
 }
 
 @media (min-width: 768px) {
-  .md\:ml-0 {
-    margin-left: 0px;
-  }
-
   .md\:w-full {
     width: 100%;
   }
@@ -878,10 +865,6 @@ footer:before {
 
   .md\:items-start {
     align-items: flex-start;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:justify-around {

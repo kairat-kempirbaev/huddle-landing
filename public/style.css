@@ -19,8 +19,21 @@
     --sc1b: url("./images/bg-section-bottom-desktop-1.svg");
     --sc2t: url("./images/bg-section-top-desktop-2.svg");
     --sc2b: url("./images/bg-section-bottom-desktop-2.svg");
+    --footb: url("./images/bg-footer-top-desktop.svg");
   }
 }
+
+@media all and (max-width: 640px) { 
+  :root {
+    --curve-height: 40px;
+    --sc1t: url("./images/bg-section-top-mobile-1.svg");
+    --sc1b: url("./images/bg-section-bottom-mobile-1.svg");
+    --sc2t: url("./images/bg-section-top-mobile-2.svg");
+    --sc2b: url("./images/bg-section-bottom-mobile-2.svg");
+  }
+}
+
+
 
 .try-it {
   position: relative;
@@ -75,5 +88,5 @@ footer {
 
 footer:before {
   top: calc(-1 * var(--curve-height));
-  background-image: url("./images/bg-footer-top-desktop.svg");
+  background-image: var(--footb);
 }
