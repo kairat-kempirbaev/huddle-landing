@@ -24,16 +24,16 @@
     />
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
-  <body class="min-h-[100vh] flex flex-col items-baseline justify-around ">
+  <body class="min-h-[100vh] flex flex-col items-baseline justify-around">
     <header class="flex justify-around p-2 pt-4 md:p-16 w-full mb-5">
-      <p><img src="./images/logo.svg" alt="" /> </p>
+      <p><img src="./images/logo.svg" alt="" /></p>
       <button
         class="try-it border-[1px] h-8 px-8 border-lpnk border-opacity-30 rounded-full"
       >
         Try it free
       </button>
     </header>
-    <main class="flex flex-col just items-center">
+    <main class="flex flex-col just items-center justify-center w-full">
       <h1 class="text-center font-bold text-3xl block">
         Build The Community Your Fans Will Love
       </h1>
@@ -70,7 +70,9 @@
       </div>
     </main>
 
-    <section class="active flex flex-col-reverse md:flex-row justify-center items-center md:items-start md:gap-12">
+    <section
+      class=" flex flex-col-reverse md:flex-row justify-center items-center md:items-start md:gap-12"
+    >
       <div class="flex flex-col gap-5 justify-center basis-1/4 md:text-center">
         <h2 class="text-[2rem] font-extrabold">Grow Together</h2>
         <p class="max-w-[50ch] md:max-w-none text-lg font-semibold">
@@ -104,7 +106,9 @@
       </div>
     </section>
 
-    <section class="active flex flex-col-reverse md:flex-row justify-center md:gap-12">
+    <section
+      class=" flex flex-col-reverse md:flex-row justify-center md:gap-12"
+    >
       <div class="flex flex-col gap-5 justify-center basis-1/4">
         <h2 class="text-[2rem] font-extrabold">Your Users</h2>
         <p class="text-lg font-semibold">
@@ -132,44 +136,64 @@
       </button>
     </section>
 
-    <footer class="bg-vdc text-white flex flex-col-reverse gap-16 md:gap-0 md:flex-row md:items-center md:justify-around w-full  pb-12">
-      <div class="flex flex-col gap-2 md:gap-4  pl-20 md:pl-3">
-        <img src="./images/logo-white.svg" alt="company logo" class="w-48 h-8"/> 
-        <p class="max-w-[40ch]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
-          quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-        </p>
-        <p class="flex gap-3">
-          <span class="block pt-1"
-            ><img width="15" height="15" src="./images/icon-phone.svg"
-          /></span>
-          Phone: +1-543-123-4567
-        </p>
-        <p class="flex gap-3">
-          <span class="block pt-2"
-            ><img width="15" height="15" src="./images/icon-email.svg"
-          /></span>
-          example@huddle.com
-        </p>
-      </div>
-      <div class="flex flex-col gap-2 md:gap-4 ml-20 md:pl-0 w-[40ch] md:w-auto">
-        <div class="max-w-[40ch]">
-          <h3 class="font-bold text-[2rem]">Newsletter</h3>
-          <p >
-            To recieve tips on how to grow your community, sign up to our weekly
-            newsletter. We’ll never send you spam or pass on your email address
-          </p>
-        </div>
-        <form action="" class="flex h-10 items-start gap-2 flex-col md:flex-row ">
-          <input
-            class="px-10 p-2 rounded-xl text-black w-[40ch] md:w-[340px]"
-            type="email"
-            placeholder="Your email"
+    <footer class="bg-vdc w-full text-white">
+      <div
+        class="flex flex-col-reverse gap-16 md:gap-0 p-8 w-full  md:flex-row  items-center md:justify-around"
+      >
+        <aside
+          class="flex flex-col gap-2 md:gap-4  md:w-full max-w-[50ch]"
+        >
+          <img
+            src="./images/logo-white.svg"
+            alt="company logo"
+            class="w-48 h-8"
           />
-          <button type="submit" action="none" class="p-2 md:px-8 self-end md:self-start bg-lpnk rounded-xl text-white">
-            Subscribe
-          </button>
-        </form>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+          </p>
+          <p class="flex gap-3">
+            <span class="block pt-1"
+              ><img width="15" height="15" src="./images/icon-phone.svg"
+            /></span>
+            Phone: +1-543-123-4567
+          </p>
+          <p class="flex gap-3">
+            <span class="block pt-2"
+              ><img width="15" height="15" src="./images/icon-email.svg"
+            /></span>
+            example@huddle.com
+          </p>
+        </aside>
+        <aside
+          class="flex flex-col gap-2 md:gap-4 md:w-full max-w-[50ch]"
+        >
+          <div>
+            <h3 class="font-bold text-[2rem]">Newsletter</h3>
+            <p class=" text-left">
+              To recieve tips on how to grow your community, sign up to our
+              weekly newsletter. We’ll never send you spam or pass on your email
+              address
+            </p>
+          </div>
+          <form
+            action=""
+            class="flex h-10 items-start gap-2 flex-col md:flex-row"
+          >
+            <input
+              class="px-10 p-2 w-full md:w-[60ch] rounded-xl text-black"
+              type="email"
+              placeholder="Your email"
+            />
+            <button
+              type="submit"
+              action="none"
+              class="p-2 md:px-8 self-end md:self-start bg-lpnk rounded-xl text-white"
+            >
+              Subscribe
+            </button>
+          </form>
+        </aside>
       </div>
     </footer>
   </body>
